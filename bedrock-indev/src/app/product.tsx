@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-
-const HomePage: React.FC = () => {
+const Product: React.FC = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center min-h-screen bg-white text-gray-800">
       <header className="fixed w-full h-48 top-0 flex items-center justify-between w-full p-5 bg-gray-700 text-white z-50">
@@ -11,7 +9,7 @@ const HomePage: React.FC = () => {
           Bedrock
         </h1>
         <div className="flex justify-end w-full space-x-20 mr-40">
-          <h1 className="text-3xl font-semibold pl-2"><Link to='/about'></Link></h1>
+          <h1 className="text-3xl font-semibold pl-2">About</h1>
           <h1 className="text-3xl font-semibold pl-2">Product</h1>
           <h1 className="text-3xl font-semibold pl-2">Use Cases</h1>
           <h1 className="text-3xl font-semibold pl-2">Resources</h1>
@@ -127,4 +125,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Product;
