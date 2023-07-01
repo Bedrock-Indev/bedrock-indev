@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+'use client';
+import Link from 'next/link';
 
 const HomePage: React.FC = () => {
   return (
@@ -10,12 +9,35 @@ const HomePage: React.FC = () => {
           <img src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/bedrock.png" alt='-' className="mr-3 w-24 h-24" />
           Bedrock
         </h1>
+
         <div className="flex justify-end w-full space-x-20 mr-40">
-          <h1 className="text-3xl font-semibold pl-2"><Link to='/about'></Link></h1>
-          <h1 className="text-3xl font-semibold pl-2">Product</h1>
-          <h1 className="text-3xl font-semibold pl-2">Use Cases</h1>
-          <h1 className="text-3xl font-semibold pl-2">Resources</h1>
-          <h1 className="text-3xl font-semibold pl-2">Contact Us</h1>
+          <nav>
+          <h1 className="text-3xl font-semibold pl-2">
+            <Link href='/product'>
+              <a>Product</a>
+            </Link>
+          </h1>
+          <h1 className="text-3xl font-semibold pl-2">
+            <Link href='/about'>
+              <a>About</a>
+            </Link>
+          </h1>
+          <h1 className="text-3xl font-semibold pl-2">
+            <Link href='/cases'>
+              <a>Use Cases</a>
+            </Link>
+          </h1>
+          <h1 className="text-3xl font-semibold pl-2">
+            <Link href='/resources'>
+              <a>Resources</a>
+            </Link>
+          </h1>
+          <h1 className="text-3xl font-semibold pl-2">
+            <Link href='/contact'>
+              <a>Contact Us</a>
+            </Link>
+          </h1>
+          </nav>
         </div>
       </header>
 
@@ -112,8 +134,7 @@ const HomePage: React.FC = () => {
 
       <footer className="flex items-center justify-center w-full h-96 p-5 bg-gray-700 text-white">
         <h1 className="text-3xl font-semibold ml-20 flex items-center">
-          <img src='pictures/bedrock.png' alt='-' className="mr-3" />
-          Bedrock
+     
         </h1>
         <div className="flex justify-end w-60% space-x-20 mr-40">
           <h1 className="text-2xl font-semibold pl-2">About</h1>
