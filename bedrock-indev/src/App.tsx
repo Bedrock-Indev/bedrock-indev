@@ -4,6 +4,7 @@ import About from './components/About';
 import Cases from './components/Cases';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
+import Product from './components/Product';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={ <About /> } />
         <Route path="/cases" element={ <Cases /> } />
         <Route path="/contact" element={ <Contact /> } />
+        <Route path="/product" element={ <Product /> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>
     </Router>
