@@ -1,91 +1,102 @@
 import { Link } from 'react-router-dom';
+import Header from '../parts/Header';
+import Footer from '../parts/Footer';
 
-const Product: React.FC = () => {
+const About: React.FC = () => {
     return (
-        <div>
-        <div className="flex w-full flex-col items-center justify-center min-h-screen bg-white text-gray-800">
-          <header className="fixed w-full h-48 top-0 flex items-center justify-between w-full p-5 bg-gray-700 text-white z-50">
-            <h1 className="text-6xl font-semibold ml-20 flex items-center">
-              <img src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/bedrock.png" alt="-" className="mr-3 w-24 h-24" />
-              Bedrock
-            </h1>
-            <div className="flex justify-end w-full space-x-20 mr-40">
-              <h1 className="text-3xl font-semibold pl-2"><Link to='/about'>About</Link></h1>
-              <h1 className="text-3xl font-semibold pl-2"><Link to='/products'>Products</Link></h1>
-              <h1 className="text-3xl font-semibold pl-2"><Link to='/cases'>Cases</Link></h1>
-            </div>
-          </header>
-  
-          <main className="w-full mt-40">
-            <div className="w-full bg-gray-500 text-gray-900">
-              <div className="flex justify-end mx-auto container">
-                <div>
-                  <h2 className="text-6xl mt-20 font-semibold mr-80">00DDDDDD0000000000</h2>
-                  <div className="container mx-auto">
-                    <h3 className="text-3xl font-semibold mb-4 mt-10">Features:</h3>
-                    <ul className="list-disc pl-5 text-xl">
-                      <li>Easy deployment (software solution) across all existing devices and applications</li>
-                      <li>Zero install on end-user platforms</li>
-                      <li>Supports phased upgrade</li>
-                    </ul>
-                    <ul className="list-disc pl-5 mt-5 text-xl">
-                      <li>Standard, approved algorithms and protocol foundations</li>
-                      <li>Heavily open-source system components</li>
-                      <li>Scalable, high-availability solution</li>
-                      <li>Enables zero trust architecture adherence</li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                <img 
-                src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/email.png" 
-                alt="-" 
-                className="w-240 h-240 rounded-full object-cover" 
-                onError={(e) => {
-                    console.error('Failed to load image', e);
-                }}
-                />
+      <div>
+      <Header />
+      <div className="flex w-full flex-col items-center justify-center min-h-screen bg-white text-gray-800">
+          <main className="w-full mt-40 ">
+              <div className="w-full bg-gray-500 text-gray-900 pl-10 pt-16 pb-24">
+                  
+                  <div className="grid grid-cols-2 gap-4 mx-auto container">
+                      <div className="rounded-3xl shadow-md p-6 bg-white ">
+                          <h2 className="text-6xl mt-20 mb-10 font-light">Product</h2>
+            
+                          <div className="container mx-auto mb-10">
+                             
+                              <p className="text-lg mb-2">
+                                  The development of quantum computers poses a significant threat to the
+                                  security of current encryption algorithms. This has led to the rise of 
+                                  post-quantum cryptography, aiming to secure data against both classical and 
+                                  quantum computing threats.
+                              </p>
+                          </div>
+                      </div>
 
-                </div>
+                      <div>
+                          <img 
+                              src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/data_encryption_2.gif" 
+                              alt="placeholder image" 
+                              className="w-full h-auto object-cover float-right ml-60"
+                          />
+                      </div>
+                  </div>
               </div>
-            </div>
-  
-            <section className="mb-10"></section>
-  
-            <section className="mb-10">
-              <h2 className="text-2xl font-semibold mb-2">Crypto-Agility</h2>
-            </section>
-  
-            <section className="mb-10">
-              <h2 className="text-2xl font-semibold mb-2">Crypto-Agility</h2>
-              <ul className="list-disc pl-5"></ul>
-            </section>
-  
-            <section className="mb-10">
-              <h2 className="text-2xl font-semibold mb-2">Crypto-Agility</h2>
-              <ul className="list-disc pl-5">
-                <li>Enables responsiveness to enterprise risk posture</li>
-              </ul>
-            </section>
+
+              <section className="mb-10 grid grid-cols-2 gap-4 bg-gray-500 pl-80">
+                  <div className="rounded-3xl shadow-md p-6 bg-white">
+                      <h2 className="text-4xl font-light mb-2">Post-Quantum Encryption</h2>
+                      <p className="text-xl mb-2">
+                          The development of quantum computers poses a significant threat to the security of 
+                          current encryption algorithms. This has led to the rise of post-quantum cryptography, 
+                          aiming to secure data against both classical and quantum computing threats.
+                      </p>
+                  </div>
+                  <div>
+                      <img 
+                          src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/secure-email.png" 
+                          alt="placeholder image" 
+                          className="w-400 h-400 object-cover float-right"
+                      />
+                  </div>
+                  <div className="rounded-3xl shadow-md p-6 bg-white">
+                      <h3 className="text-4xl font-light mb-2 ">Quantum Computing</h3>
+                      <p className="text-xl mb-2">
+                          Quantum computers leverage quantum phenomena, such as superposition and entanglement, 
+                          to perform computations at an unprecedented speed. This increase in computational power 
+                          threatens the security of current cryptographic systems.
+                      </p>
+                  </div>
+
+                  <div>
+                      <img 
+                          src="https://placeholder.com/400x400" 
+                          alt="placeholder image" 
+                          className="w-400 h-400 object-cover float-right"
+                      />
+                  </div>
+
+                  <div className="rounded-3xl shadow-md p-6 bg-white">
+                      <h3 className="text-4xl font-light mb-2">Cryptanalysis by Quantum Computers</h3>
+                      <p className="text-xl mb-2">
+                          Common public key encryption and signature schemes like RSA and ECC are vulnerable to 
+                          quantum attacks. A sufficiently powerful quantum computer can efficiently break these 
+                          using Shor's algorithm, jeopardizing the security of virtually all digital communications.
+                      </p>
+
+                      <h3 className="text-4xl font-light mb-2">Post-Quantum Cryptography</h3>
+                      <p className="text-xl mb-2">
+                          Post-quantum cryptography refers to cryptographic algorithms that can resist quantum 
+                          computer-based attacks. These algorithms aim to replace or supplement current security 
+                          algorithms in the advent of quantum computing.
+                      </p>
+                  </div>
+                  <div>
+                      <img 
+                          src="https://placeholder.com/400x400" 
+                          alt="placeholder image" 
+                          className="w-400 h-400 object-cover float-right"
+                      />
+                  </div>
+              </section>
           </main>
-  
-          <footer className="flex items-center justify-center w-full h-96 p-5 bg-gray-700 text-white">
-            <h1 className="text-3xl font-semibold ml-20 flex items-center">
-              <img src="pictures/bedrock.png" alt="-" className="mr-3" />
-              Bedrock
-            </h1>
-            <div className="flex justify-end w-60% space-x-20 mr-40">
-              <h1 className="text-2xl font-semibold pl-2">About</h1>
-              <h1 className="text-2xl font-semibold pl-2">Product</h1>
-              <h1 className="text-2xl font-semibold pl-2">Use Cases</h1>
-              <h1 className="text-2xl font-semibold pl-2">Resources</h1>
-              <h1 className="text-2xl font-semibold pl-2">Contact Us</h1>
-            </div>
-          </footer>
-        </div>
       </div>
+      <Footer />
+  </div>
     );
   };
   
-  export default Product;
+  export default About;
   
