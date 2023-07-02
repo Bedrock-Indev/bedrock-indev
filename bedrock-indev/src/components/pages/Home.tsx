@@ -8,9 +8,10 @@ const HomePage: React.FC = () => {
             <Header />
             <div className="flex w-full flex-col items-center justify-center min-h-screen bg-white text-gray-800">
                 <main className="w-full mt-40 ">
-                    <div className="w-full bg-gray-500 text-gray-900 pt-96 pb-96">
+                    <div className="w-full bg-gray-500 text-gray-900 pl-10 pt-16 pb-24">
+                        
                         <div className="grid grid-cols-2 gap-4 mx-auto container">
-                            <div className="rounded-3xl shadow-md p-6 bg-white">
+                            <div className="rounded-3xl shadow-md p-6 bg-white ">
                                 <h2 className="text-6xl mt-20 font-light">Secure e-mail for today</h2>
                                 <h2 className="text-3xl mt-5 mb-20 font-light">(And tomorrow!)</h2>
                                 <div className="container mx-auto mb-10">
@@ -23,6 +24,7 @@ const HomePage: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
+
                             <div>
                                 <img 
                                     src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/data_encryption_2.gif" 
@@ -33,7 +35,7 @@ const HomePage: React.FC = () => {
                         </div>
                     </div>
 
-                    <section className="mb-10 grid grid-cols-2 gap-4">
+                    <section className="mb-10 grid grid-cols-2 gap-4 bg-gray-500 pl-10">
                         <div className="rounded-3xl shadow-md p-6 bg-white">
                             <h2 className="text-4xl font-light mb-2">Post-Quantum Encryption</h2>
                             <p className="text-xl mb-2">
@@ -41,17 +43,26 @@ const HomePage: React.FC = () => {
                                 current encryption algorithms. This has led to the rise of post-quantum cryptography, 
                                 aiming to secure data against both classical and quantum computing threats.
                             </p>
-
-                            <h3 className="text-4xl font-light mb-2">Quantum Computing</h3>
+                        </div>
+                        <div>
+                            <img 
+                                src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/secure-email.png" 
+                                alt="placeholder image" 
+                                className="w-400 h-400 object-cover float-right"
+                            />
+                        </div>
+                        <div className="rounded-3xl shadow-md p-6 bg-white">
+                            <h3 className="text-4xl font-light mb-2 ">Quantum Computing</h3>
                             <p className="text-xl mb-2">
                                 Quantum computers leverage quantum phenomena, such as superposition and entanglement, 
                                 to perform computations at an unprecedented speed. This increase in computational power 
                                 threatens the security of current cryptographic systems.
                             </p>
                         </div>
+
                         <div>
                             <img 
-                                src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/secure-email.png" 
+                                src="https://placeholder.com/400x400" 
                                 alt="placeholder image" 
                                 className="w-400 h-400 object-cover float-right"
                             />
