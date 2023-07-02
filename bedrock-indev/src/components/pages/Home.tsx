@@ -10,29 +10,22 @@ const HomePage: React.FC = () => {
                 <main className="w-full mt-40">
                     <div className="w-full bg-gray-500 text-gray-900">
                         <div className="grid grid-cols-2 gap-4 mx-auto container">
-                            <div>
-                                <h2 className="text-6xl mt-20 font-semibold">Secure e-mail for today</h2>
-                                <h2 className="text-3xl mt-5 mb-20 font-semibold">(And tomorrow!)</h2>
-                                <div className="container mx-auto mb-40">
-                                    <h2 className="text-xl font-semibold mb-2">Post-Quantum Encryption</h2>
+                            <div className="rounded-lg shadow-md p-6 bg-white">
+                                <h2 className="text-6xl mt-20 font-light">Secure e-mail for today</h2>
+                                <h2 className="text-3xl mt-5 mb-20 font-light">(And tomorrow!)</h2>
+                                <div className="container mx-auto mb-10">
+                                    <h2 className="text-xl font-light mb-2">Post-Quantum Encryption</h2>
                                     <p className="text-lg mb-2">
                                         The development of quantum computers poses a significant threat to the
                                         security of current encryption algorithms. This has led to the rise of 
                                         post-quantum cryptography, aiming to secure data against both classical and 
                                         quantum computing threats.
                                     </p>
-
-                                    <h3 className="text-xl font-semibold mb-2">Quantum Computing</h3>
-                                    <p className="text-lg mb-2">
-                                        Quantum computers leverage quantum phenomena, such as superposition and 
-                                        entanglement, to perform computations at an unprecedented speed. This increase 
-                                        in computational power threatens the security of current cryptographic systems.
-                                    </p>
                                 </div>
                             </div>
                             <div>
                                 <img 
-                                    src="https://placeholder.com/480x480" 
+                                    src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/data_encryption.gif" 
                                     alt="placeholder image" 
                                     className="w-480 h-480 object-cover float-right ml-60"
                                 />
@@ -42,15 +35,15 @@ const HomePage: React.FC = () => {
 
                     <section className="mb-10 grid grid-cols-2 gap-4">
                         <div>
-                            <h2 className="text-4xl font-semibold mb-2">Post-Quantum Encryption</h2>
-                            <p className="text-xl mb-2">
+                            <h2 className="text-4xl font-light mb-2 ml-20">Post-Quantum Encryption</h2>
+                            <p className="text-xl mb-2 ml-20">
                                 The development of quantum computers poses a significant threat to the security of 
                                 current encryption algorithms. This has led to the rise of post-quantum cryptography, 
                                 aiming to secure data against both classical and quantum computing threats.
                             </p>
 
-                            <h3 className="text-4xl font-semibold mb-2">Quantum Computing</h3>
-                            <p className="text-xl mb-2">
+                            <h3 className="text-4xl font-light mb-2 ml-20">Quantum Computing</h3>
+                            <p className="text-xl mb-2 ml-20">
                                 Quantum computers leverage quantum phenomena, such as superposition and entanglement, 
                                 to perform computations at an unprecedented speed. This increase in computational power 
                                 threatens the security of current cryptographic systems.
@@ -58,22 +51,22 @@ const HomePage: React.FC = () => {
                         </div>
                         <div>
                             <img 
-                                src="https://placeholder.com/400x400" 
+                                src="https://bedrock-indev-bucket.s3.eu-west-1.amazonaws.com/secure-email.png" 
                                 alt="placeholder image" 
-                                className="w-400 h-400 object-cover float-right mr-60"
+                                className="w-400 h-400 object-cover float-right"
                             />
                         </div>
 
                         <div>
-                            <h3 className="text-4xl font-semibold mb-2">Cryptanalysis by Quantum Computers</h3>
-                            <p className="text-xl mb-2">
+                            <h3 className="text-4xl font-light mb-2 ml-20">Cryptanalysis by Quantum Computers</h3>
+                            <p className="text-xl mb-2 ml-20">
                                 Common public key encryption and signature schemes like RSA and ECC are vulnerable to 
                                 quantum attacks. A sufficiently powerful quantum computer can efficiently break these 
                                 using Shor's algorithm, jeopardizing the security of virtually all digital communications.
                             </p>
 
-                            <h3 className="text-4xl font-semibold mb-2">Post-Quantum Cryptography</h3>
-                            <p className="text-xl mb-2">
+                            <h3 className="text-4xl font-light mb-2 ml-20">Post-Quantum Cryptography</h3>
+                            <p className="text-xl mb-2 ml-20">
                                 Post-quantum cryptography refers to cryptographic algorithms that can resist quantum 
                                 computer-based attacks. These algorithms aim to replace or supplement current security 
                                 algorithms in the advent of quantum computing.
@@ -86,8 +79,6 @@ const HomePage: React.FC = () => {
                                 className="w-400 h-400 object-cover float-right mr-60"
                             />
                         </div>
-                        
-                        {/* Continue with the rest of your content in the same pattern... */}
                     </section>
                 </main>
             </div>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const HomePage: React.FC = () => {
+const Product: React.FC = () => {
     return (
         <div>
         <div className="flex w-full flex-col items-center justify-center min-h-screen bg-white text-gray-800">
@@ -87,5 +87,5 @@ const HomePage: React.FC = () => {
     );
   };
   
-  export default HomePage;
+  export default Product;
   
